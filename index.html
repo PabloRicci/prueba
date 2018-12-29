@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es" dir="ltr">
+
+<head>
+  <title>Centro de Comando</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/botones.css" />
+
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header">
+
+      <!-- Logo -->
+      <h1><a href="index.html" id="logo">Centro de Comando y Contro <em> by GP SRL</em></a></h1>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li class="current"><a href="index.html">Inicial</a></li>
+          <li><a href="#">Mapa General</a></li>
+          <li><a>Funcion 1</a></li>
+          <li><a>Funcion 3</a></li>
+          <li><a>Funcion 4</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    
+    <div id="barra" class="botones">
+      <li>
+        <ul><button id="rutasbtn">Rutas</button></ul>
+        <ul><button id="consultasbtn">Consultas</button></ul>
+        <ul><button id="fincasbtn">Fincas</button></ul>
+        <ul><button id="tareasbtn">Tareas</button></ul>
+        <ul><button id="otros1btn">Otros1</button></ul>
+        <ul><button id="otros2btn">Otros2</button></ul>
+        <ul><button id="otros3btn">Otros3</button></ul>
+      </li>
+    </div>
+
+    <div id="map" style="width: 1100px;height:600px;margin:auto;vertical-align: middle; ">---ACA DIBUJA EL MAPA---</div>
+
+   
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkmjoW2TEUHdDS3RTI_7H2ID6gWOvqTPk&callback=initMapa"
+      async defer>
+    </script>
+
+    <!-- librerias jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    <!-- funciones firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase-database.js"></script>
+
+
+    <script src="js/firebase.js"></script>
+    <script src="js/mapa.js"></script>
+    <script src="js/funcionesDibujo.js"></script>
+
+    <script>
+      var miMapa;
+        initMapJS();
+    </script>
+
+</body>
+
+</html>
